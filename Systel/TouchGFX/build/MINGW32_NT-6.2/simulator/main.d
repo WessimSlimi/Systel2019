@@ -77,6 +77,28 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  generated/gui_generated/include/gui_generated/homescreen_screen/HomeScreenViewBase.hpp \
  gui/include/gui/homescreen_screen/HomeScreenPresenter.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TiledImage.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/Line.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/Button.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/ScalableImage.hpp \
+ gui/include/gui/speech_screen/SpeechView.hpp \
+ generated/gui_generated/include/gui_generated/speech_screen/SpeechViewBase.hpp \
+ gui/include/gui/speech_screen/SpeechPresenter.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/Buttons.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp \
@@ -90,14 +112,10 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/AnimatedImage.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TextButtonStyle.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TiledImageButtonStyle.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
- gui/include/gui/speech_screen/SpeechView.hpp \
- generated/gui_generated/include/gui_generated/speech_screen/SpeechViewBase.hpp \
- gui/include/gui/speech_screen/SpeechPresenter.hpp \
  gui/include/gui/analog_screen/AnalogView.hpp \
  generated/gui_generated/include/gui_generated/analog_screen/AnalogViewBase.hpp \
  gui/include/gui/analog_screen/AnalogPresenter.hpp \
@@ -266,6 +284,50 @@ gui/include/gui/homescreen_screen/HomeScreenPresenter.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TiledImage.hpp:
 
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/Line.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextArea.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/Button.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/ScalableImage.hpp:
+
+gui/include/gui/speech_screen/SpeechView.hpp:
+
+generated/gui_generated/include/gui_generated/speech_screen/SpeechViewBase.hpp:
+
+gui/include/gui/speech_screen/SpeechPresenter.hpp:
+
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/Buttons.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:
@@ -292,8 +354,6 @@ gui/include/gui/homescreen_screen/HomeScreenPresenter.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TextButtonStyle.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextArea.hpp:
-
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TiledImageButtonStyle.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
@@ -301,12 +361,6 @@ gui/include/gui/homescreen_screen/HomeScreenPresenter.hpp:
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx//framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
-
-gui/include/gui/speech_screen/SpeechView.hpp:
-
-generated/gui_generated/include/gui_generated/speech_screen/SpeechViewBase.hpp:
-
-gui/include/gui/speech_screen/SpeechPresenter.hpp:
 
 gui/include/gui/analog_screen/AnalogView.hpp:
 

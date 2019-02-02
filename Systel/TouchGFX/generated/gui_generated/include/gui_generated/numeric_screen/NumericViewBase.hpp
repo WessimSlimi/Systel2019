@@ -9,9 +9,11 @@
 #include <gui/numeric_screen/NumericPresenter.hpp>
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/TiledImage.hpp>
-#include <touchgfx/widgets/Image.hpp>
-
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB888.hpp>
+
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
 class NumericViewBase : public touchgfx::View<NumericPresenter>
 {
@@ -31,12 +33,13 @@ protected:
      */
     touchgfx::Container BackgroundContainer;
     touchgfx::TiledImage Background;
-    touchgfx::Image STLogo1;
+    touchgfx::Box Shadow_1;
+    touchgfx::Line line1;
+    touchgfx::PainterRGB888 line1Painter;
 
     touchgfx::Container TopBar;
-    touchgfx::Box box2;
     touchgfx::Image supcom1;
-    touchgfx::TextButtonStyle< touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > > > NumericButton;
+    touchgfx::TextButtonStyle< touchgfx::IconButtonStyle< touchgfx::ClickButtonTrigger > > NumericButton;
 
 
 private:
@@ -50,6 +53,12 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<NumericViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint16_t CANVAS_BUFFER_SIZE = 7200;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
 };
 

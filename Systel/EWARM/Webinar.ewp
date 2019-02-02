@@ -1202,6 +1202,12 @@
         </file>
       </group>
       <group>
+        <name>containers</name>
+        <file>
+          <name>$PROJ_DIR$\..\TouchGFX\generated\gui_generated\src\containers\CustomContainer1Base.cpp</name>
+        </file>
+      </group>
+      <group>
         <name>homescreen_screen</name>
         <file>
           <name>$PROJ_DIR$\..\TouchGFX\generated\gui_generated\src\homescreen_screen\HomeScreenViewBase.cpp</name>
@@ -1234,11 +1240,17 @@
           <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\blue_icons_home_48.cpp</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\blue_textures_grey_wash_wall.cpp</name>
+          <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\dark_buttons_round_icon_button.cpp</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\__designer\dark_buttons_round_icon_button_pressed.cpp</name>
         </file>
       </group>
       <file>
         <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\AnalogIcon.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\background.cpp</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\BinaryIcon.cpp</name>
@@ -1260,6 +1272,9 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\supcom.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\TouchGFX\generated\images\src\Webp.net-resizeimage.cpp</name>
       </file>
     </group>
     <group>
@@ -1290,6 +1305,12 @@
       <name>common</name>
       <file>
         <name>$PROJ_DIR$\..\TouchGFX\gui\src\common\FrontendApplication.cpp</name>
+      </file>
+    </group>
+    <group>
+      <name>containers</name>
+      <file>
+        <name>$PROJ_DIR$\..\TouchGFX\gui\src\containers\CustomContainer1.cpp</name>
       </file>
     </group>
     <group>

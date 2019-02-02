@@ -38,7 +38,7 @@ touchgfx::InternalFlashFont& getFont_verdana_32_4bpp();
 
 touchgfx::InternalFlashFont& getFont_verdana_32_4bpp()
 {
-    static touchgfx::InternalFlashFont verdana_32_4bpp(glyphs_verdana_32_4bpp, 15, 32, 6, 4, 0, 0, unicodes_verdana_32_4bpp, kerning_verdana_32_4bpp, 63, 0);
+    static touchgfx::InternalFlashFont verdana_32_4bpp(glyphs_verdana_32_4bpp, 14, 32, 6, 4, 0, 0, unicodes_verdana_32_4bpp, kerning_verdana_32_4bpp, 63, 0);
     return verdana_32_4bpp;
 }
 

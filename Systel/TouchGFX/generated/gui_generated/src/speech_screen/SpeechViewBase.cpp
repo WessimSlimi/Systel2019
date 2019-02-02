@@ -9,30 +9,36 @@
 SpeechViewBase::SpeechViewBase() :
     flexButtonCallback(this, &SpeechViewBase::flexButtonCallbackHandler)
 {
+    CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
+
     BackgroundContainer.setPosition(0, 0, 480, 272);
 
-    Background.setBitmap(Bitmap(BITMAP_BLUE_TEXTURES_GREY_WASH_WALL_ID));
+    Background.setBitmap(Bitmap(BITMAP_WEBP_NET_RESIZEIMAGE_ID));
     Background.setPosition(0, 0, 480, 272);
     Background.setOffset(0, 0);
     BackgroundContainer.add(Background);
 
-    STLogo1.setXY(0, 222);
-    STLogo1.setBitmap(Bitmap(BITMAP_STLOGO_ID));
-    BackgroundContainer.add(STLogo1);
+    Shadow_1.setPosition(0, 0, 480, 272);
+    Shadow_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 9, 255));
+    Shadow_1.setAlpha(48);
+    BackgroundContainer.add(Shadow_1);
+
+    line1.setPosition(0, 42, 480, 18);
+    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    line1.setPainter(line1Painter);
+    line1.setStart(0, 5);
+    line1.setEnd(480, 5);
+    line1.setLineWidth(3);
+    line1.setLineEndingStyle(Line::BUTT_CAP_ENDING);
+    line1.setAlpha(81);
+    BackgroundContainer.add(line1);
 
     TopBar.setPosition(0, 0, 480, 50);
-
-    box2.setPosition(0, 0, 480, 50);
-    box2.setColor(touchgfx::Color::getColorFrom24BitRGB(61, 113, 178));
-    TopBar.add(box2);
 
     supcom1.setXY(330, -9);
     supcom1.setBitmap(Bitmap(BITMAP_SUPCOM_ID));
     TopBar.add(supcom1);
 
-    SpeechButton.setBoxWithBorderPosition(0, 0, 203, 50);
-    SpeechButton.setBorderSize(0);
-    SpeechButton.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(61, 113, 178), touchgfx::Color::getColorFrom24BitRGB(61, 113, 178), touchgfx::Color::getColorFrom24BitRGB(61, 113, 178), touchgfx::Color::getColorFrom24BitRGB(61, 113, 178));
     SpeechButton.setIconBitmaps(Bitmap(BITMAP_BLUE_ICONS_HOME_48_ID), Bitmap(BITMAP_BLUE_ICONS_HOME_48_ID));
     SpeechButton.setIconXY(0, 0);
     SpeechButton.setText(TypedText(T_SINGLEUSEID5));

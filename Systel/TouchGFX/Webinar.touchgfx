@@ -139,9 +139,8 @@
           {
             "Components": [
               {
-                "FileName": "__designer\\blue_textures_grey_wash_wall.png",
+                "FileName": "webp.net-resizeimage.png",
                 "Alpha": 255,
-                "Style": "Texture9",
                 "OffsetX": 0,
                 "OffsetY": 0,
                 "Name": "Background",
@@ -157,14 +156,43 @@
                 "Moveable": false
               },
               {
-                "RelativeFilename": "STLogo.png",
-                "Alpha": 255,
-                "Name": "STLogo1",
+                "Color": {
+                  "Red": 0,
+                  "Green": 9,
+                  "Blue": 255
+                },
+                "Alpha": 48,
+                "Name": "Shadow_1",
                 "X": 0,
-                "Y": 222,
-                "Width": 80,
-                "Height": 50,
-                "Type": "Image",
+                "Y": 0,
+                "Width": 480,
+                "Height": 272,
+                "Type": "Box",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Alpha": 81,
+                "StartX": 0,
+                "StartY": 5,
+                "EndX": 480,
+                "EndY": 5,
+                "LineWidth": 3,
+                "LineEndingStyle": "Butt",
+                "Name": "line1",
+                "X": 0,
+                "Y": 42,
+                "Width": 480,
+                "Height": 18,
+                "Type": "Line",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -187,25 +215,6 @@
           {
             "Components": [
               {
-                "Color": {
-                  "Red": 61,
-                  "Green": 113,
-                  "Blue": 178
-                },
-                "Alpha": 255,
-                "Name": "box2",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 50,
-                "Type": "Box",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
                 "RelativeFilename": "supcom.png",
                 "Alpha": 255,
                 "Name": "supcom1",
@@ -214,79 +223,6 @@
                 "Width": 150,
                 "Height": 69,
                 "Type": "Image",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
-              {
-                "Alpha": 255,
-                "ButtonTrigger": {
-                  "Type": "ClickButtonTrigger"
-                },
-                "ButtonStyles": [
-                  {
-                    "Type": "TextButtonStyle",
-                    "X": 49,
-                    "Y": 6,
-                    "TextId": "SingleUseId4",
-                    "TextRotation": "0",
-                    "ColorReleased": {
-                      "Red": 63,
-                      "Green": 62,
-                      "Blue": 69
-                    },
-                    "ColorPressed": {
-                      "Red": 7,
-                      "Green": 7,
-                      "Blue": 8
-                    }
-                  },
-                  {
-                    "Type": "IconButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Style": "Icon28",
-                    "IconReleased": "__designer\\blue_icons_home_48.png",
-                    "IconPressed": "__designer\\blue_icons_home_48.png"
-                  },
-                  {
-                    "Type": "BoxWithBorderButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Width": 188,
-                    "Height": 50,
-                    "LockToFlexButtonSize": true,
-                    "BorderSize": 0,
-                    "ColorReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    }
-                  }
-                ],
-                "Name": "HomeButton",
-                "X": 7,
-                "Y": 0,
-                "Width": 147,
-                "Height": 50,
-                "Type": "FlexButton",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -307,87 +243,22 @@
             "Moveable": false
           },
           {
-            "Components": [
-              {
-                "Alpha": 255,
-                "ButtonTrigger": {
-                  "Type": "ClickButtonTrigger"
-                },
-                "ButtonStyles": [
-                  {
-                    "Type": "ImageButtonStyle",
-                    "X": 121,
-                    "Y": 0,
-                    "LockFlexButtonToImageSize": false,
-                    "ImageReleased": "speechicon.png",
-                    "ImagePressed": "speechicon.png"
-                  },
-                  {
-                    "Type": "TextButtonStyle",
-                    "X": 35,
-                    "Y": 10,
-                    "TextId": "SingleUseId1",
-                    "TextRotation": "0",
-                    "ColorReleased": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "ColorPressed": {
-                      "Red": 255,
-                      "Green": 0,
-                      "Blue": 0
-                    }
-                  },
-                  {
-                    "Type": "BoxWithBorderButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Width": 180,
-                    "Height": 50,
-                    "LockToFlexButtonSize": true,
-                    "BorderSize": 5,
-                    "ColorReleased": {
-                      "Red": 0,
-                      "Green": 102,
-                      "Blue": 153
-                    },
-                    "ColorPressed": {
-                      "Red": 0,
-                      "Green": 153,
-                      "Blue": 204
-                    },
-                    "ColorBorderReleased": {
-                      "Red": 0,
-                      "Green": 51,
-                      "Blue": 102
-                    },
-                    "ColorBorderPressed": {
-                      "Red": 13,
-                      "Green": 42,
-                      "Blue": 71
-                    }
-                  }
-                ],
-                "Name": "SpeechButton",
-                "X": 0,
-                "Y": 0,
-                "Width": 180,
-                "Height": 50,
-                "Type": "FlexButton",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              }
-            ],
-            "Name": "SpeechContainer",
-            "X": 167,
-            "Y": 77,
-            "Width": 180,
-            "Height": 50,
-            "Type": "Container",
+            "TextId": "SingleUseId7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 82,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "SpeechTextIcon",
+            "X": 54,
+            "Y": 143,
+            "Width": 73,
+            "Height": 25,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -395,87 +266,22 @@
             "Moveable": false
           },
           {
-            "Components": [
-              {
-                "Alpha": 255,
-                "ButtonTrigger": {
-                  "Type": "ClickButtonTrigger"
-                },
-                "ButtonStyles": [
-                  {
-                    "Type": "ImageButtonStyle",
-                    "X": 121,
-                    "Y": 0,
-                    "LockFlexButtonToImageSize": false,
-                    "ImageReleased": "analogicon.png",
-                    "ImagePressed": "analogicon.png"
-                  },
-                  {
-                    "Type": "TextButtonStyle",
-                    "X": 35,
-                    "Y": 10,
-                    "TextId": "SingleUseId2",
-                    "TextRotation": "0",
-                    "ColorReleased": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "ColorPressed": {
-                      "Red": 255,
-                      "Green": 0,
-                      "Blue": 0
-                    }
-                  },
-                  {
-                    "Type": "BoxWithBorderButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Width": 180,
-                    "Height": 50,
-                    "LockToFlexButtonSize": true,
-                    "BorderSize": 5,
-                    "ColorReleased": {
-                      "Red": 0,
-                      "Green": 102,
-                      "Blue": 153
-                    },
-                    "ColorPressed": {
-                      "Red": 0,
-                      "Green": 153,
-                      "Blue": 204
-                    },
-                    "ColorBorderReleased": {
-                      "Red": 0,
-                      "Green": 51,
-                      "Blue": 102
-                    },
-                    "ColorBorderPressed": {
-                      "Red": 51,
-                      "Green": 102,
-                      "Blue": 153
-                    }
-                  }
-                ],
-                "Name": "AnalogButton",
-                "X": 0,
-                "Y": 0,
-                "Width": 180,
-                "Height": 50,
-                "Type": "FlexButton",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              }
-            ],
-            "Name": "AnalogContainer",
-            "X": 167,
-            "Y": 135,
-            "Width": 180,
-            "Height": 50,
-            "Type": "Container",
+            "TextId": "SingleUseId8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 94,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "AnalogTextIcon",
+            "X": 204,
+            "Y": 143,
+            "Width": 68,
+            "Height": 25,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -483,87 +289,118 @@
             "Moveable": false
           },
           {
-            "Components": [
-              {
-                "Alpha": 255,
-                "ButtonTrigger": {
-                  "Type": "ClickButtonTrigger"
-                },
-                "ButtonStyles": [
-                  {
-                    "Type": "ImageButtonStyle",
-                    "X": 124,
-                    "Y": 0,
-                    "LockFlexButtonToImageSize": false,
-                    "ImageReleased": "binaryicon.png",
-                    "ImagePressed": "binaryicon.png"
-                  },
-                  {
-                    "Type": "TextButtonStyle",
-                    "X": 35,
-                    "Y": 10,
-                    "TextId": "SingleUseId3",
-                    "TextRotation": "0",
-                    "ColorReleased": {
-                      "Red": 255,
-                      "Green": 255,
-                      "Blue": 255
-                    },
-                    "ColorPressed": {
-                      "Red": 255,
-                      "Green": 0,
-                      "Blue": 0
-                    }
-                  },
-                  {
-                    "Type": "BoxWithBorderButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Width": 180,
-                    "Height": 50,
-                    "LockToFlexButtonSize": true,
-                    "BorderSize": 5,
-                    "ColorReleased": {
-                      "Red": 0,
-                      "Green": 102,
-                      "Blue": 153
-                    },
-                    "ColorPressed": {
-                      "Red": 0,
-                      "Green": 153,
-                      "Blue": 204
-                    },
-                    "ColorBorderReleased": {
-                      "Red": 0,
-                      "Green": 51,
-                      "Blue": 102
-                    },
-                    "ColorBorderPressed": {
-                      "Red": 51,
-                      "Green": 102,
-                      "Blue": 153
-                    }
-                  }
-                ],
-                "Name": "NumericButton",
-                "X": 0,
-                "Y": 2,
-                "Width": 180,
-                "Height": 50,
-                "Type": "FlexButton",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              }
-            ],
-            "Name": "NumericContainer",
-            "X": 167,
-            "Y": 192,
-            "Width": 180,
-            "Height": 55,
-            "Type": "Container",
+            "TextId": "SingleUseId9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 94,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "NumericIcon",
+            "X": 330,
+            "Y": 143,
+            "Width": 83,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\dark_buttons_round_icon_button_pressed.png",
+            "Released": "__designer\\dark_buttons_round_icon_button.png",
+            "Alpha": 228,
+            "Name": "SpeechButton",
+            "X": 48,
+            "Y": 76,
+            "Width": 60,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\dark_buttons_round_icon_button_pressed.png",
+            "Released": "__designer\\dark_buttons_round_icon_button.png",
+            "Alpha": 255,
+            "Name": "NumericButton",
+            "X": 345,
+            "Y": 76,
+            "Width": 60,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\dark_buttons_round_icon_button_pressed.png",
+            "Released": "__designer\\dark_buttons_round_icon_button.png",
+            "Alpha": 228,
+            "Name": "AnalogButton",
+            "X": 204,
+            "Y": 76,
+            "Width": 60,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Filename": "speechicon.png",
+            "Alpha": 168,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "scalableImage1",
+            "X": 62,
+            "Y": 88,
+            "Width": 33,
+            "Height": 36,
+            "Type": "ScalableImage",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Filename": "binaryicon.png",
+            "Alpha": 168,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "scalableImage1_1",
+            "X": 358,
+            "Y": 88,
+            "Width": 35,
+            "Height": 38,
+            "Type": "ScalableImage",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Filename": "analogicon.png",
+            "Alpha": 168,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "scalableImage1_2",
+            "X": 217,
+            "Y": 88,
+            "Width": 34,
+            "Height": 36,
+            "Type": "ScalableImage",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -572,19 +409,6 @@
           }
         ],
         "Interactions": [
-          {
-            "InteractionName": "HomeInteraction",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "HomeButton",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "HomeScreen",
-              "Type": "ActionGotoScreen"
-            }
-          },
           {
             "InteractionName": "SpeechInteraction",
             "HasCompletedTrigger": false,
@@ -627,16 +451,15 @@
         ],
         "Name": "HomeScreen",
         "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
+        "CanvasBufferSize": 7200
       },
       {
         "Components": [
           {
             "Components": [
               {
-                "FileName": "__designer\\blue_textures_grey_wash_wall.png",
+                "FileName": "webp.net-resizeimage.png",
                 "Alpha": 255,
-                "Style": "Texture9",
                 "OffsetX": 0,
                 "OffsetY": 0,
                 "Name": "Background",
@@ -652,14 +475,43 @@
                 "Moveable": false
               },
               {
-                "RelativeFilename": "STLogo.png",
-                "Alpha": 255,
-                "Name": "STLogo1",
+                "Color": {
+                  "Red": 0,
+                  "Green": 9,
+                  "Blue": 255
+                },
+                "Alpha": 48,
+                "Name": "Shadow_1",
                 "X": 0,
-                "Y": 222,
-                "Width": 80,
-                "Height": 50,
-                "Type": "Image",
+                "Y": 0,
+                "Width": 480,
+                "Height": 272,
+                "Type": "Box",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Alpha": 81,
+                "StartX": 0,
+                "StartY": 5,
+                "EndX": 480,
+                "EndY": 5,
+                "LineWidth": 3,
+                "LineEndingStyle": "Butt",
+                "Name": "line1",
+                "X": 0,
+                "Y": 42,
+                "Width": 480,
+                "Height": 18,
+                "Type": "Line",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -681,25 +533,6 @@
           },
           {
             "Components": [
-              {
-                "Color": {
-                  "Red": 61,
-                  "Green": 113,
-                  "Blue": 178
-                },
-                "Alpha": 255,
-                "Name": "box2",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 50,
-                "Type": "Box",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
               {
                 "RelativeFilename": "supcom.png",
                 "Alpha": 255,
@@ -745,35 +578,6 @@
                     "Style": "Icon28",
                     "IconReleased": "__designer\\blue_icons_home_48.png",
                     "IconPressed": "__designer\\blue_icons_home_48.png"
-                  },
-                  {
-                    "Type": "BoxWithBorderButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Width": 203,
-                    "Height": 50,
-                    "LockToFlexButtonSize": true,
-                    "BorderSize": 0,
-                    "ColorReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    }
                   }
                 ],
                 "Name": "SpeechButton",
@@ -819,16 +623,15 @@
         ],
         "Name": "Speech",
         "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
+        "CanvasBufferSize": 7200
       },
       {
         "Components": [
           {
             "Components": [
               {
-                "FileName": "__designer\\blue_textures_grey_wash_wall.png",
+                "FileName": "webp.net-resizeimage.png",
                 "Alpha": 255,
-                "Style": "Texture9",
                 "OffsetX": 0,
                 "OffsetY": 0,
                 "Name": "Background",
@@ -844,14 +647,43 @@
                 "Moveable": false
               },
               {
-                "RelativeFilename": "STLogo.png",
-                "Alpha": 255,
-                "Name": "STLogo1",
+                "Color": {
+                  "Red": 0,
+                  "Green": 9,
+                  "Blue": 255
+                },
+                "Alpha": 48,
+                "Name": "Shadow_1",
                 "X": 0,
-                "Y": 222,
-                "Width": 80,
-                "Height": 50,
-                "Type": "Image",
+                "Y": 0,
+                "Width": 480,
+                "Height": 272,
+                "Type": "Box",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Alpha": 81,
+                "StartX": 0,
+                "StartY": 5,
+                "EndX": 480,
+                "EndY": 5,
+                "LineWidth": 3,
+                "LineEndingStyle": "Butt",
+                "Name": "line1",
+                "X": 0,
+                "Y": 42,
+                "Width": 480,
+                "Height": 18,
+                "Type": "Line",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -873,25 +705,6 @@
           },
           {
             "Components": [
-              {
-                "Color": {
-                  "Red": 61,
-                  "Green": 113,
-                  "Blue": 178
-                },
-                "Alpha": 255,
-                "Name": "box2",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 50,
-                "Type": "Box",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
               {
                 "RelativeFilename": "supcom.png",
                 "Alpha": 255,
@@ -937,35 +750,6 @@
                     "Style": "Icon28",
                     "IconReleased": "__designer\\blue_icons_home_48.png",
                     "IconPressed": "__designer\\blue_icons_home_48.png"
-                  },
-                  {
-                    "Type": "BoxWithBorderButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Width": 203,
-                    "Height": 50,
-                    "LockToFlexButtonSize": true,
-                    "BorderSize": 0,
-                    "ColorReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    }
                   }
                 ],
                 "Name": "SpeechButton",
@@ -1011,16 +795,15 @@
         ],
         "Name": "Analog",
         "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
+        "CanvasBufferSize": 7200
       },
       {
         "Components": [
           {
             "Components": [
               {
-                "FileName": "__designer\\blue_textures_grey_wash_wall.png",
+                "FileName": "webp.net-resizeimage.png",
                 "Alpha": 255,
-                "Style": "Texture9",
                 "OffsetX": 0,
                 "OffsetY": 0,
                 "Name": "Background",
@@ -1036,14 +819,43 @@
                 "Moveable": false
               },
               {
-                "RelativeFilename": "STLogo.png",
-                "Alpha": 255,
-                "Name": "STLogo1",
+                "Color": {
+                  "Red": 0,
+                  "Green": 9,
+                  "Blue": 255
+                },
+                "Alpha": 48,
+                "Name": "Shadow_1",
                 "X": 0,
-                "Y": 222,
-                "Width": 80,
-                "Height": 50,
-                "Type": "Image",
+                "Y": 0,
+                "Width": 480,
+                "Height": 272,
+                "Type": "Box",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Alpha": 81,
+                "StartX": 0,
+                "StartY": 5,
+                "EndX": 480,
+                "EndY": 5,
+                "LineWidth": 3,
+                "LineEndingStyle": "Butt",
+                "Name": "line1",
+                "X": 0,
+                "Y": 42,
+                "Width": 480,
+                "Height": 18,
+                "Type": "Line",
                 "Visible": true,
                 "Draggable": false,
                 "Clickable": false,
@@ -1065,25 +877,6 @@
           },
           {
             "Components": [
-              {
-                "Color": {
-                  "Red": 61,
-                  "Green": 113,
-                  "Blue": 178
-                },
-                "Alpha": 255,
-                "Name": "box2",
-                "X": 0,
-                "Y": 0,
-                "Width": 480,
-                "Height": 50,
-                "Type": "Box",
-                "Visible": true,
-                "Draggable": false,
-                "Clickable": false,
-                "Fadeable": false,
-                "Moveable": false
-              },
               {
                 "RelativeFilename": "supcom.png",
                 "Alpha": 255,
@@ -1129,35 +922,6 @@
                     "Style": "Icon28",
                     "IconReleased": "__designer\\blue_icons_home_48.png",
                     "IconPressed": "__designer\\blue_icons_home_48.png"
-                  },
-                  {
-                    "Type": "BoxWithBorderButtonStyle",
-                    "X": 0,
-                    "Y": 0,
-                    "Width": 186,
-                    "Height": 50,
-                    "LockToFlexButtonSize": true,
-                    "BorderSize": 0,
-                    "ColorReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderReleased": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    },
-                    "ColorBorderPressed": {
-                      "Red": 61,
-                      "Green": 113,
-                      "Blue": 178
-                    }
                   }
                 ],
                 "Name": "NumericButton",
@@ -1203,33 +967,45 @@
         ],
         "Name": "Numeric",
         "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
+        "CanvasBufferSize": 7200
       }
     ],
-    "CustomContainerDefinitions": [],
+    "CustomContainerDefinitions": [
+      {
+        "Components": [],
+        "Interactions": [],
+        "Name": "CustomContainer1",
+        "X": 0,
+        "Y": 0,
+        "Width": 250,
+        "Height": 250,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      }
+    ],
     "TextEntries": [
-      {
-        "TextEntryId": "SingleUseId1",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId2",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId3",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId4",
-        "IsResource": false
-      },
       {
         "TextEntryId": "SingleUseId5",
         "IsResource": false
       },
       {
         "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId9",
         "IsResource": false
       }
     ],

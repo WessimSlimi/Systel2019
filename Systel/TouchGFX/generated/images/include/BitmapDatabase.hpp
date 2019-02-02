@@ -7,14 +7,17 @@
 #include <touchgfx/Bitmap.hpp>
 
 const uint16_t BITMAP_ANALOGICON_ID = 0; // Size: 50x50 pixels
-const uint16_t BITMAP_BINARYICON_ID = 1; // Size: 50x50 pixels
+const uint16_t BITMAP_BINARYICON_ID = 1; // Size: 512x512 pixels
 const uint16_t BITMAP_NUMERICICON_ID = 2; // Size: 50x50 pixels
-const uint16_t BITMAP_STLOGO_ID = 3; // Size: 80x50 pixels
+const uint16_t BITMAP_STLOGO_ID = 3; // Size: 300x186 pixels
 const uint16_t BITMAP_SPEECHICON_ID = 4; // Size: 50x50 pixels
-const uint16_t BITMAP_BLUE_ICONS_HOME_48_ID = 5; // Size: 46x44 pixels
-const uint16_t BITMAP_BLUE_TEXTURES_GREY_WASH_WALL_ID = 6; // Size: 350x259 pixels
-const uint16_t BITMAP_LOGO_SUPCOM_ID = 7; // Size: 240x77 pixels
-const uint16_t BITMAP_SUPCOM_ID = 8; // Size: 150x69 pixels
+const uint16_t BITMAP_WEBP_NET_RESIZEIMAGE_ID = 5; // Size: 435x272 pixels
+const uint16_t BITMAP_BACKGROUND_ID = 6; // Size: 1160x772 pixels
+const uint16_t BITMAP_BLUE_ICONS_HOME_48_ID = 7; // Size: 46x44 pixels
+const uint16_t BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID = 8; // Size: 60x60 pixels
+const uint16_t BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID = 9; // Size: 60x60 pixels
+const uint16_t BITMAP_LOGO_SUPCOM_ID = 10; // Size: 240x77 pixels
+const uint16_t BITMAP_SUPCOM_ID = 11; // Size: 150x69 pixels
 
 namespace BitmapDatabase
 {

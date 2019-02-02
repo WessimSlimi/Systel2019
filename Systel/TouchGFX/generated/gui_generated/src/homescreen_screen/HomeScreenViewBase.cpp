@@ -7,88 +7,96 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 HomeScreenViewBase::HomeScreenViewBase() :
-    flexButtonCallback(this, &HomeScreenViewBase::flexButtonCallbackHandler)
+    buttonCallback(this, &HomeScreenViewBase::buttonCallbackHandler)
 {
+    CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
+
     BackgroundContainer.setPosition(0, 0, 480, 272);
 
-    Background.setBitmap(Bitmap(BITMAP_BLUE_TEXTURES_GREY_WASH_WALL_ID));
+    Background.setBitmap(Bitmap(BITMAP_WEBP_NET_RESIZEIMAGE_ID));
     Background.setPosition(0, 0, 480, 272);
     Background.setOffset(0, 0);
     BackgroundContainer.add(Background);
 
-    STLogo1.setXY(0, 222);
-    STLogo1.setBitmap(Bitmap(BITMAP_STLOGO_ID));
-    BackgroundContainer.add(STLogo1);
+    Shadow_1.setPosition(0, 0, 480, 272);
+    Shadow_1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 9, 255));
+    Shadow_1.setAlpha(48);
+    BackgroundContainer.add(Shadow_1);
+
+    line1.setPosition(0, 42, 480, 18);
+    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    line1.setPainter(line1Painter);
+    line1.setStart(0, 5);
+    line1.setEnd(480, 5);
+    line1.setLineWidth(3);
+    line1.setLineEndingStyle(Line::BUTT_CAP_ENDING);
+    line1.setAlpha(81);
+    BackgroundContainer.add(line1);
 
     TopBar.setPosition(0, 0, 480, 50);
-
-    box2.setPosition(0, 0, 480, 50);
-    box2.setColor(touchgfx::Color::getColorFrom24BitRGB(61, 113, 178));
-    TopBar.add(box2);
 
     supcom1.setXY(330, -9);
     supcom1.setBitmap(Bitmap(BITMAP_SUPCOM_ID));
     TopBar.add(supcom1);
 
-    HomeButton.setBoxWithBorderPosition(0, 0, 188, 50);
-    HomeButton.setBorderSize(0);
-    HomeButton.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(61, 113, 178), touchgfx::Color::getColorFrom24BitRGB(61, 113, 178), touchgfx::Color::getColorFrom24BitRGB(61, 113, 178), touchgfx::Color::getColorFrom24BitRGB(61, 113, 178));
-    HomeButton.setIconBitmaps(Bitmap(BITMAP_BLUE_ICONS_HOME_48_ID), Bitmap(BITMAP_BLUE_ICONS_HOME_48_ID));
-    HomeButton.setIconXY(0, 0);
-    HomeButton.setText(TypedText(T_SINGLEUSEID4));
-    HomeButton.setTextPosition(49, 6, 147, 50);
-    HomeButton.setTextColors(touchgfx::Color::getColorFrom24BitRGB(63, 62, 69), touchgfx::Color::getColorFrom24BitRGB(7, 7, 8));
-    HomeButton.setPosition(7, 0, 147, 50);
-    HomeButton.setAction(flexButtonCallback);
-    TopBar.add(HomeButton);
+    SpeechTextIcon.setXY(54, 143);
+    SpeechTextIcon.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    SpeechTextIcon.setLinespacing(0);
+    SpeechTextIcon.setAlpha(82);
+    SpeechTextIcon.setTypedText(TypedText(T_SINGLEUSEID7));
 
-    SpeechContainer.setPosition(167, 77, 180, 50);
+    AnalogTextIcon.setXY(204, 143);
+    AnalogTextIcon.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    AnalogTextIcon.setLinespacing(0);
+    AnalogTextIcon.setAlpha(94);
+    AnalogTextIcon.setTypedText(TypedText(T_SINGLEUSEID8));
 
-    SpeechButton.setBoxWithBorderPosition(0, 0, 180, 50);
-    SpeechButton.setBorderSize(5);
-    SpeechButton.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(13, 42, 71));
-    SpeechButton.setText(TypedText(T_SINGLEUSEID1));
-    SpeechButton.setTextPosition(35, 10, 180, 50);
-    SpeechButton.setTextColors(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255), touchgfx::Color::getColorFrom24BitRGB(255, 0, 0));
-    SpeechButton.setBitmaps(Bitmap(BITMAP_SPEECHICON_ID), Bitmap(BITMAP_SPEECHICON_ID));
-    SpeechButton.setBitmapXY(121, 0);
-    SpeechButton.setPosition(0, 0, 180, 50);
-    SpeechButton.setAction(flexButtonCallback);
-    SpeechContainer.add(SpeechButton);
+    NumericIcon.setXY(330, 143);
+    NumericIcon.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    NumericIcon.setLinespacing(0);
+    NumericIcon.setAlpha(94);
+    NumericIcon.setTypedText(TypedText(T_SINGLEUSEID9));
 
-    AnalogContainer.setPosition(167, 135, 180, 50);
+    SpeechButton.setXY(48, 76);
+    SpeechButton.setBitmaps(Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    SpeechButton.setAction(buttonCallback);
+    SpeechButton.setAlpha(228);
 
-    AnalogButton.setBoxWithBorderPosition(0, 0, 180, 50);
-    AnalogButton.setBorderSize(5);
-    AnalogButton.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
-    AnalogButton.setText(TypedText(T_SINGLEUSEID2));
-    AnalogButton.setTextPosition(35, 10, 180, 50);
-    AnalogButton.setTextColors(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255), touchgfx::Color::getColorFrom24BitRGB(255, 0, 0));
-    AnalogButton.setBitmaps(Bitmap(BITMAP_ANALOGICON_ID), Bitmap(BITMAP_ANALOGICON_ID));
-    AnalogButton.setBitmapXY(121, 0);
-    AnalogButton.setPosition(0, 0, 180, 50);
-    AnalogButton.setAction(flexButtonCallback);
-    AnalogContainer.add(AnalogButton);
+    NumericButton.setXY(345, 76);
+    NumericButton.setBitmaps(Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    NumericButton.setAction(buttonCallback);
 
-    NumericContainer.setPosition(167, 192, 180, 55);
+    AnalogButton.setXY(204, 76);
+    AnalogButton.setBitmaps(Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    AnalogButton.setAction(buttonCallback);
+    AnalogButton.setAlpha(228);
 
-    NumericButton.setBoxWithBorderPosition(0, 0, 180, 50);
-    NumericButton.setBorderSize(5);
-    NumericButton.setBoxWithBorderColors(touchgfx::Color::getColorFrom24BitRGB(0, 102, 153), touchgfx::Color::getColorFrom24BitRGB(0, 153, 204), touchgfx::Color::getColorFrom24BitRGB(0, 51, 102), touchgfx::Color::getColorFrom24BitRGB(51, 102, 153));
-    NumericButton.setText(TypedText(T_SINGLEUSEID3));
-    NumericButton.setTextPosition(35, 10, 180, 50);
-    NumericButton.setTextColors(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255), touchgfx::Color::getColorFrom24BitRGB(255, 0, 0));
-    NumericButton.setBitmaps(Bitmap(BITMAP_BINARYICON_ID), Bitmap(BITMAP_BINARYICON_ID));
-    NumericButton.setBitmapXY(124, 0);
-    NumericButton.setPosition(0, 2, 180, 50);
-    NumericButton.setAction(flexButtonCallback);
-    NumericContainer.add(NumericButton);
+    scalableImage1.setBitmap(Bitmap(BITMAP_SPEECHICON_ID));
+    scalableImage1.setPosition(62, 88, 33, 36);
+    scalableImage1.setScalingAlgorithm(ScalableImage::NEAREST_NEIGHBOR);
+    scalableImage1.setAlpha(168);
+
+    scalableImage1_1.setBitmap(Bitmap(BITMAP_BINARYICON_ID));
+    scalableImage1_1.setPosition(358, 88, 35, 38);
+    scalableImage1_1.setScalingAlgorithm(ScalableImage::NEAREST_NEIGHBOR);
+    scalableImage1_1.setAlpha(168);
+
+    scalableImage1_2.setBitmap(Bitmap(BITMAP_ANALOGICON_ID));
+    scalableImage1_2.setPosition(217, 88, 34, 36);
+    scalableImage1_2.setScalingAlgorithm(ScalableImage::NEAREST_NEIGHBOR);
+    scalableImage1_2.setAlpha(168);
 
     add(BackgroundContainer);
     add(TopBar);
-    add(SpeechContainer);
-    add(AnalogContainer);
-    add(NumericContainer);
+    add(SpeechTextIcon);
+    add(AnalogTextIcon);
+    add(NumericIcon);
+    add(SpeechButton);
+    add(NumericButton);
+    add(AnalogButton);
+    add(scalableImage1);
+    add(scalableImage1_1);
+    add(scalableImage1_2);
 }
 
 void HomeScreenViewBase::setupScreen()
@@ -96,28 +104,14 @@ void HomeScreenViewBase::setupScreen()
 
 }
 
-void HomeScreenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+void HomeScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &HomeButton)
-    {
-        //HomeInteraction
-        //When HomeButton clicked change screen to HomeScreen
-        //Go to HomeScreen with no screen transition
-        application().gotoHomeScreenScreenNoTransition();
-    }
-    else if (&src == &SpeechButton)
+    if (&src == &SpeechButton)
     {
         //SpeechInteraction
         //When SpeechButton clicked change screen to Speech
         //Go to Speech with no screen transition
         application().gotoSpeechScreenNoTransition();
-    }
-    else if (&src == &AnalogButton)
-    {
-        //AnalogInteraction
-        //When AnalogButton clicked change screen to Analog
-        //Go to Analog with no screen transition
-        application().gotoAnalogScreenNoTransition();
     }
     else if (&src == &NumericButton)
     {
@@ -125,5 +119,12 @@ void HomeScreenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButto
         //When NumericButton clicked change screen to Numeric
         //Go to Numeric with no screen transition
         application().gotoNumericScreenNoTransition();
+    }
+    else if (&src == &AnalogButton)
+    {
+        //AnalogInteraction
+        //When AnalogButton clicked change screen to Analog
+        //Go to Analog with no screen transition
+        application().gotoAnalogScreenNoTransition();
     }
 }
